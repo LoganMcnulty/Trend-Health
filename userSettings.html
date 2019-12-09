@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trend Health</title>
+
+  <!-- mobile device compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <!-- boot strap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/66fb9cbaef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+
+<body style="background: powderblue">
+
+<!-- header -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Trend Health</a>
+        <i class="fas fa-first-aid"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home
+                    <i class="fas fa-igloo"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Your Watchlist
+                    <i class="fas fa-binoculars"></i>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">User Settings
+                    <i class="fas fa-tools"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+<!-- contains entirety of page content  -->
+  <div class="container">
+
+    <!-- add student, view student -->
+      <div class="row justify-content-around">
+          <div class="col-lg-6">
+            <div class="card card-default" style="margin-top: 3%; border:3px solid black">
+
+                <div class="card-header" style="background:black; font-weight:bold; color:white; text-align:center">
+                    <h3>
+                        User Settings 
+                        <i class="fas fa-tools"></i>
+                    </h3>
+                </div>
+
+        <!-- watch Body -->
+                <div class="card-body">
+                    <form class = "col-lg-8" role="form" id="settingsForm">
+                        Moving Average Type
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Simple</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Exponential</label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="shortMA">Short Term Moving Avg:</label>
+                            <input class="form-control" id="shortMA" type="number" value="10">
+                            <label for="shortMAWeight">Short MA Weight %:</label>
+                            <input class="form-control" id="shortMAWeight" type="number" value="33">
+                        </div>
+                        <div class="form-group row">
+                            <label for="medMA">Medium Term Moving Average:</label>
+                            <input class="form-control" id="medMA" type="number" value="40"></input>
+                            <label for="medMAWeight">Medium MA Weight %:</label>
+                            <input class="form-control" id="medMAWeight" type="number" value="33"></input>
+                        </div>
+                        <div class="form-group row">
+                            <label for="longMA">Long Term Moving Average:</label>
+                            <input class="form-control" id="longMA" type="number" value="80">
+                            <label for="longMAWeight">Long MA Weight %:</label>
+                            <input class="form-control" id="longMAWeight" type="number" value="33">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>  
+    </div>
+
+<!-- footer -->
+  <footer class="footer">
+    <!-- <div class="container" style="background: wheat; width: 35%;text-align:center; margin-bottom:4%; border-radius:25px">
+        <a target="_blank" href="/api/curriculum">API Vocab Link</a> | 
+        <a target="_blank" href="https://github.com/LoganMcnulty/Vocab-O-Matic">GitHub Repo</a> -->
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
+
+<!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/...."></script> -->
+  
+
+

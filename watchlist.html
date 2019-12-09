@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trend Health</title>
+
+  <!-- mobile device compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+  <!-- boot strap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- custom CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Geo" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/66fb9cbaef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+
+<body style="background: powderblue">
+
+<!-- header -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Trend Health</a>
+        <i class="fas fa-first-aid"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home
+                    <i class="fas fa-igloo"></i>
+                </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Your Watchlist
+                    <i class="fas fa-binoculars"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">User Settings
+                    <i class="fas fa-tools"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+
+<!-- contains entirety of page content  -->
+  <div class="container">
+
+    <!-- add student, view student -->
+      <div class="row justify-content-around">
+          <div class="col-lg-12">
+            <div class="card card-default" style="margin-top: 3%; border:3px solid black">
+
+                <div class="row justify-content-around" style="margin-top:2%">
+                    <div class="card-header col-lg-3" style="background:black; font-weight:bold; color:white; text-align:center">
+                        <h3>
+                            Your Watchlist 
+                            <i class="fas fa-binoculars"></i>
+                        </h3>
+                    </div>
+                    <div class="card-header col-lg-3" style="background:black; font-weight:bold; color:white;">
+                        <h5>
+                            Add a ticker
+                        </h5>
+                    </div>
+                    <div class="card-header col-lg-3" style="background:black; font-weight:bold; color:white;">
+                        <h5>
+                            Sort By:
+                        </h5>
+                    </div>
+                </div>
+        <!-- watch Body -->
+                <div class="card-body">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                            <th scope="col">Ticker</th>
+                            <th scope="col">Health Score <i class="fas fa-first-aid"></i></th>
+                            <th scope="col">Sector</th>
+                            <th scope="col">Market Cap (Bill.)</th>
+                            <th scope="col">% from MAs</th>
+                            <th scope="col">Active Options</th>
+                            <th scope="col">More Info</th>
+                            <th scope="col">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">$TSLA</th>
+                                <td>81%</td>
+                                <td>Technology</td>
+                                <td>$61.19</td>
+                                <td>5% 10% 15%</td>
+                                <td>
+                                    <a href="https://old.nasdaq.com/symbol/tsla/option-chain/most-active">Feeling Risky</a>
+                                </td>
+                                <td>
+                                    <a href="https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">$AAPL</th>
+                                <td>95%</td>
+                                <td>Technology</td>
+                                <td>$1206</td>
+                                <td>5% 10% 15%</td>
+                                <td>
+                                    <a href="https://old.nasdaq.com/symbol/aapl/option-chain/most-active">Feeling Risky</a>
+                                </td>
+                                <td>
+                                    <a href="https://finance.yahoo.com/quote/AAPL?p=AAPL&.tsrc=fin-srch">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">$GOOGL</th>
+                                <td>88%</td>
+                                <td>Software</td>
+                                <td>$926</td>
+                                <td>5% 10% 15%</td>
+                                <td>
+                                    <a href="https://old.nasdaq.com/symbol/googl/option-chain/most-active">Feeling Risky</a>
+                                </td>
+                                <td>
+                                    <a href="https://finance.yahoo.com/quote/GOOGL?p=GOOGL&.tsrc=fin-srch">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </td>
+                                <td>✓</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">$BTC.X</th>
+                                <td>52%</td>
+                                <td>Crypto Currencies</td>
+                                <td>$134</td>
+                                <td>5% 10% 15%</td>
+                                <td>
+                                    <a href="">NA</a>
+                                </td>
+                                <td>
+                                    <a href="https://finance.yahoo.com/quote/BTC-USD?p=BTC-USD&.tsrc=fin-srche">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </td>
+                                <td>✓</td>
+                            </tr>
+                                <th scope="row">$BABA</th>
+                                <td>75%</td>
+                                <td>China</td>
+                                <td>$533</td>
+                                <td>5% 10% 15%</td>
+                                <td>
+                                    <a href="https://old.nasdaq.com/symbol/baba/option-chain/most-active">Feeling Risky</a>
+                                </td>
+                                <td>
+                                    <a href="https://finance.yahoo.com/quote/BABA?p=BABA&.tsrc=fin-srch">
+                                        <i class="fas fa-info-circle"></i>
+                                    </a>
+                                </td>
+                                <td>✓</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+
+            </div>
+        </div>  
+    </div>
+
+<!-- footer -->
+  <footer class="footer">
+    <!-- <div class="container" style="background: wheat; width: 35%;text-align:center; margin-bottom:4%; border-radius:25px">
+        <a target="_blank" href="/api/curriculum">API Vocab Link</a> | 
+        <a target="_blank" href="https://github.com/LoganMcnulty/Vocab-O-Matic">GitHub Repo</a> -->
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
+
+<!-- script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="js/...."></script> -->
+  
+
+
